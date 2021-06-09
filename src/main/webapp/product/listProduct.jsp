@@ -14,14 +14,14 @@
 </head>
 <body>
 <center>
-    <h1>User Management</h1>
+    <h1>QUẢN LÝ SẢN PHẨM</h1>
     <h2>
-        <a href="/products?action=create">Add New Product</a>
+        <a href="/products?action=create">Thêm mới sản phẩm</a>
     </h2>
 </center>
 <div align="center">
     <table border="1" cellpadding="5">
-        <caption><h2>List of Users</h2></caption>
+        <caption><h2>Danh sách sản phẩm</h2></caption>
         <tr>
             <th>ID</th>
             <th>Tên Sản Phẩm</th>

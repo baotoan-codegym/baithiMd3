@@ -54,6 +54,41 @@
                     />
                 </td>
             </tr>
+             <tr>
+                <th>Số lượng sản phẩm:</th>
+                <td>
+                    <input type="text" name="amount" size="15"
+                           value="<c:out value='${product.amount}' />"
+                    />
+                </td>
+            </tr>
+             <tr>
+                <th>Màu sắc sản phẩm:</th>
+                <td>
+                    <input type="text" name="color" size="15"
+                           value="<c:out value='${product.color}' />"
+                    />
+                </td>
+            </tr>
+             <tr>
+                <th>Miêu tả sản phẩm:</th>
+                <td>
+                    <input type="text" name="description" size="15"
+                           value="<c:out value='${product.description}' />"
+                    />
+                </td>
+            </tr>
+ <tr>
+                <th>Loại sản phẩm:</th>
+     <td>
+     <select name="category_id" id="category_id" class="form-select">
+         <c:forEach items="${categoryList}" var="category">
+             <option value="${category.id}"<c:if test="${product.category.id == category.id}">selected="true"</c:if>>${category.name}</option>
+         </c:forEach>
+     </select>
+     </td>
+            </tr>
+
             <tr>
                 <td colspan="2" align="center">
                     <input type="submit" value="Save"/>
